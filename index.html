@@ -11,7 +11,10 @@
     <!-- Google Fonts - Cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -37,78 +40,129 @@
 
     <!-- Home -->
     <section class="home" id="home">
-        <div class="home-content reveal-left">
-            <h3>مرحباً 👋</h3>
-            <h1>Abdullah Ahmed</h1>
-            <h3>أنا <span class="multiple-text"></span></h3>
-            <p class="bio">مونتير محترف متخصص في تعديل فيديوهات الريلز والمحتوى القصير لإنستغرام وتيك توك ويوتيوب شورتس</p>
+        <div class="home-bg-animation">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="home-content" data-aos="fade-right" data-aos-duration="1000">
+                <h3 class="greeting">مرحباً 👋</h3>
+                <h1 class="name">Abdullah <span class="gradient-text">Ahmed</span></h1>
+                <h3 class="role">أنا <span class="multiple-text"></span></h3>
+                <p class="bio">مونتير محترف متخصص في تعديل فيديوهات الريلز والمحتوى القصير لإنستغرام وتيك توك ويوتيوب شورتس</p>
 
-            <div class="social-media">
-                <a href="https://www.instagram.com/3bdallah.pk/" target="_blank"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=61550950064302" target="_blank"><i class="bx bxl-facebook"></i></a>
-                <a href="https://x.com/3bdullah_dev" target="_blank"><i class="bx bxl-twitter"></i></a>
+                <div class="social-media" data-aos="fade-up" data-aos-delay="300">
+                    <a href="https://www.instagram.com/3bdallah.pk/" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61550950064302" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook">
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="https://x.com/3bdullah_dev" target="_blank" rel="noopener noreferrer" class="social-link twitter" title="Twitter">
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+                </div>
+
+                <a href="#portfolio" class="custom-btn" data-aos="fade-up" data-aos-delay="400">
+                    <span>شاهد أعمالي</span>
+                    <i class="bx bx-right-arrow-alt"></i>
+                </a>
             </div>
 
-            <a href="#portfolio" class="custom-btn">شاهد أعمالي</a>
-        </div>
-
-        <div class="home-img reveal-right">
-            <img src="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1742506962/new_szjlis.jpg" alt="Abdullah Ahmed" />
+            <div class="home-img" data-aos="fade-left" data-aos-duration="1000">
+                <div class="img-wrapper">
+                    <img src="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1768858970/WhatsApp_Image_2025-09-01_at_21.23.35_92b9ad76_exrgcp.jpg" alt="Abdullah Ahmed" />
+                    <div class="img-glow"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Portfolio -->
     <section class="portfolio" id="portfolio">
-        <h2 class="heading">أعمالي - Reels المعدلة</h2>
+        <div class="container">
+            <h2 class="heading" data-aos="fade-up">
+                <span class="section-number">01</span>
+                أعمالي - <span class="gradient-text">Reels المعدلة</span>
+            </h2>
 
-        <div class="portfolio-content">
+            <div class="portfolio-content">
+                <!-- غيّر الروابط والعناوين والأوصاف حسب شغلك الفعلي -->
+                <div class="video-row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/qVjkeRhklrA?rel=0" loading="lazy" allowfullscreen title="Reel - مثال 1"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Reel - مثال 1</h3>
+                        <p>Hook قوي + موشن جرافيك + ترجمات جذابة + موسيقى تريند</p>
+                        <div class="video-tags">
+                            <span class="tag">موشن جرافيك</span>
+                            <span class="tag">ترجمات</span>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- غيّر الروابط والعناوين والأوصاف حسب شغلك الفعلي -->
-            <div class="video-row">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/qVjkeRhklrA?rel=0" loading="lazy" allowfullscreen></iframe>
+                <div class="video-row" data-aos="fade-up" data-aos-delay="200">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/aY1pQbV9vnk" loading="lazy" allowfullscreen title="Reel - مثال 2"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Reel - مثال 2</h3>
+                        <p>تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة</p>
+                        <div class="video-tags">
+                            <span class="tag">تصحيح ألوان</span>
+                            <span class="tag">تأثيرات</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-info">
-                    <h3>Reel - مثال 1</h3>
-                    <p>Hook قوي + موشن جرافيك + ترجمات جذابة + موسيقى تريند</p>
+
+                <div class="video-row" data-aos="fade-up" data-aos-delay="300">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/iWC8ijscHeA" loading="lazy" allowfullscreen title="Reel - مثال 3"></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Reel - مثال 3</h3>
+                        <p>ستوري تيلينج + نصوص متحركة + إيقاع سريع يناسب التريند</p>
+                        <div class="video-tags">
+                            <span class="tag">نصوص متحركة</span>
+                            <span class="tag">ستوري تيلينج</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- أضف هنا المزيد من <div class="video-row"> ... </div> حسب عدد الريلز -->
             </div>
-
-            <div class="video-row">
-                <div class="video-container">
-                    <iframe src="https://youtube.com/embed/aY1pQbV9vnk" loading="lazy" allowfullscreen></iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Reel - مثال 2</h3>
-                    <p>تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة</p>
-                </div>
-            </div>
-
-            <div class="video-row">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/iWC8ijscHeA" loading="lazy" allowfullscreen></iframe>
-                </div>
-                <div class="video-info">
-                    <h3>Reel - مثال 3</h3>
-                    <p>ستوري تيلينج + نصوص متحركة + إيقاع سريع يناسب التريند</p>
-                </div>
-            </div>
-
-            <!-- أضف هنا المزيد من <div class="video-row"> ... </div> حسب عدد الريلز -->
-
         </div>
     </section>
 
     <!-- Contact -->
     <section class="contact" id="contact">
-        <h2>تواصل معي لتعديل ريلزك القادم</h2>
+        <div class="container">
+            <h2 class="contact-heading" data-aos="fade-up">
+                <span class="section-number">02</span>
+                تواصل معي لتعديل <span class="gradient-text">ريلزك القادم</span>
+            </h2>
 
-        <form action="https://formspree.io/f/mvgpadpv" method="POST">
-            <input type="text" name="name" placeholder="الاسم" required />
-            <input type="email" name="email" placeholder="البريد الإلكتروني" required />
-            <textarea name="message" placeholder="اكتب تفاصيل المطلوب (نوع الريلز - المدة - التريند المطلوب - أي ملاحظات)" rows="6" required></textarea>
-            <button type="submit" class="nav-btn">إرسال الطلب</button>
-        </form>
+            <form action="https://formspree.io/f/mvgpadpv" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                    <input type="text" name="name" placeholder="الاسم" required />
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+                    <input type="email" name="email" placeholder="البريد الإلكتروني" required />
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="form-group" data-aos="fade-up" data-aos-delay="500">
+                    <textarea name="message" placeholder="اكتب تفاصيل المطلوب (نوع الريلز - المدة - التريند المطلوب - أي ملاحظات)" rows="6" required></textarea>
+                    <i class="bx bx-message-dots"></i>
+                </div>
+                <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="600">
+                    <span>إرسال الطلب</span>
+                    <i class="bx bx-send"></i>
+                </button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -118,6 +172,7 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
